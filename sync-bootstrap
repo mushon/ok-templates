@@ -6,3 +6,6 @@ cp -r bootstrap/img/* img/
 echo 'Copying Javascripts'
 cp -r bootstrap/js/* lib/
 rm -rf lib/tests
+
+echo 'Copy Responsive Version'
+cp bootstrap/docs/assets/css/bootstrap-responsive-rtl.css ./css/bootstrap-responsive.css
