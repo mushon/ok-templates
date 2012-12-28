@@ -1,3 +1,0 @@
-#!/bin/bash
-
-recess ./less/app.less:./css/app.css --watch ./less
