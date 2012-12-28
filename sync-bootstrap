@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo 'Copying Images'
+cp -r bootstrap/img/* img/
+
+echo 'Copying Javascripts'
+cp -r bootstrap/js/* lib/
+rm -rf lib/tests
