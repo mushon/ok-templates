@@ -5199,6 +5199,22 @@ body {
   background: none;
   color: inherit;
 }
+h1 {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
 .card {
   background: #ffffff;
   border: 1px solid #e6e6e6;
@@ -5227,8 +5243,7 @@ body {
   border-radius: 0 4px 0 0;
 }
 .card-list .btn-question {
-  float: left;
-  margin: 10px;
+  margin: 12px;
 }
 .card-list ul {
   clear: both;
@@ -5313,4 +5328,82 @@ body {
   background: #92b2cc;
   color: #ffffff;
   border: 2px solid #4f81a9;
+}
+.sidebar {
+  background: #ffffff;
+  border-top: 2px solid #222222;
+  padding: 10px;
+}
+.sidebar h2 {
+  margin: 0;
+  line-height: 1em;
+  float: right;
+  *zoom: 1;
+}
+.sidebar h2:before,
+.sidebar h2:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.sidebar h2:after {
+  clear: both;
+}
+.sidebar ul {
+  clear: both;
+  list-style: none;
+  margin: 60px 0 0;
+}
+.sidebar ul li {
+  margin: 20px 0;
+}
+.agenda-mini header {
+  *zoom: 1;
+}
+.agenda-mini header:before,
+.agenda-mini header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.agenda-mini header:after {
+  clear: both;
+}
+.agenda-mini header img {
+  float: right;
+  display: block;
+  margin: 0 0 10px 20px;
+}
+.agenda-mini header h3 {
+  float: right;
+  letter-spacing: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: -5px 0 0;
+}
+.agenda-mini header h3 span {
+  display: block;
+  font-weight: 700;
+}
+.agenda-pie {
+  width: 88px;
+  height: 88px;
+  border: 1px solid #a9a6a6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.btn-question {
+  float: left;
+  *zoom: 1;
+}
+.btn-question:before,
+.btn-question:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.btn-question:after {
+  clear: both;
 }
