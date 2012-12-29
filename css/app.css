@@ -5393,14 +5393,31 @@ h4 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 10px;
+  margin: 10px 0;
   padding: 6px;
-  width: 90%;
   background: #92b2cc;
   color: #ffffff;
   border: 2px solid #4f81a9;
 }
-.card-main .social-details [class*=sprite] {
+.card-main .social-details .actions-panel {
+  padding: 0 10px;
+}
+.card-main .social-details .social-links {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+.card-main .social-details .social-links h5 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #e6e6e6;
+}
+.card-main .social-details .social-links li + li {
+  margin-right: 30px;
+}
+.card-main .social-details .social-links li [class*=sprite] {
   display: inline-block;
   width: 32px;
   height: 34px;
