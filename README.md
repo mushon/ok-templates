@@ -1,7 +1,35 @@
-# Open-Knesset Redesign - Templates and Static HTML & CSS
+# Open-Knesset Templates
 
-## LESS Watching and Automatic Compiling
+Templates and Static HTML & CSS for Open Knesset Redesign
 
-Use `less-watch` to automatically compile LESS files in `./less` folder into `./css` folder.
+## Setting your repository
 
-Note that only `app.less` will be compiled into `app.css`
+This repo has a submodule pointing to a version of Twitter Bootstrap with RTL support.
+
+Start by forking this repo to your own Github account and then run:
+```
+$ git clone git@github.com:YOUR_ACCOUNT/ok-templates.git
+$ cd ok-templates
+$ git submodule init
+$ git submodule update
+```
+
+## Installing LESS
+
+You'll need Node.js and NPM installed on your machine
+
+```
+$ npm install -g less
+```
+
+## Compiling your LESS files
+
+You should compile less/app.less to css/app.css
+
+To do so, cd into the project's directory and run:
+
+```
+$ lessc less/app.less css/app.css
+```
+
+If you're running Mac OS X, you can use [Less.app](http://incident57.com/less/) to automatically watch your LESS files for changes and compile them.
