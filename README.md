@@ -42,4 +42,4 @@ Add individual images to `img/sprites`. For example, icons are added to `img/spr
 
 Install Glue - (http://glue.readthedocs.org/en/latest/index.html)
 
-Run `glue --less --recursive --namespace= --sprite-namespace=icon img/sprites --css=less/ --img=img/`
+Run `glue --less --recursive --namespace= --sprite-namespace=sprite img/sprites --css=less/ --img=img/`
