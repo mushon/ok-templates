@@ -5230,7 +5230,7 @@ h4 {
 .card-list h2 {
   float: right;
   padding: 5px 30px 5px 5px;
-  background: #222222;
+  background: #464545;
   color: #fff;
   margin: 0;
   font-size: 20px;
@@ -5309,21 +5309,6 @@ h4 {
   background-color: #464545;
   position: relative;
   right: -10px;
-}
-.card-main .btn-big {
-  display: block;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px;
-  padding: 6px;
-  width: 90%;
-  background: #92b2cc;
-  color: #ffffff;
-  border: 2px solid #4f81a9;
 }
 .sidebar {
   background: #fcfcfc;
@@ -5449,6 +5434,39 @@ h4 {
 }
 .note-worthy-good header h3 span {
   color: #3ac8a8;
+}
+.btn-big {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 6px;
+  width: 90%;
+  background: #92b2cc;
+  color: #ffffff;
+  border: 2px solid #4f81a9;
+}
+.btn-question {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #464545;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  background: #ffffff;
+  color: #464545;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
+.btn-question:hover {
+  color: #ffffff;
+  background: #464545;
 }
 .btn-question {
   float: left;
