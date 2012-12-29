@@ -19,7 +19,7 @@ echo "Copying responsive.css"
 cp css/responsive.css $STATIC_DIR/css/
 
 echo "Copying fonts"
-tar cf - --exclude='Alef*.html' font | (cd $STATIC_DIR && tar xvf -)
+tar cf - --exclude='Alef*.html' --exclude='.DS_Store' font | (cd $STATIC_DIR && tar xvf -)
 
 echo "Copying images"
 tar cf - --exclude='user-pic.png' img | (cd $STATIC_DIR && tar xvf -)
