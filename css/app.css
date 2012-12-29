@@ -1529,24 +1529,24 @@ input.search-query {
   border-radius: 0;
 }
 .form-search .input-append .search-query {
-  -webkit-border-radius: 14px 0 0 14px;
-  -moz-border-radius: 14px 0 0 14px;
-  border-radius: 14px 0 0 14px;
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  border-radius: 0 14px 14px 0;
 }
 .form-search .input-append .btn {
-  -webkit-border-radius: 0 14px 14px 0;
-  -moz-border-radius: 0 14px 14px 0;
-  border-radius: 0 14px 14px 0;
-}
-.form-search .input-prepend .search-query {
-  -webkit-border-radius: 0 14px 14px 0;
-  -moz-border-radius: 0 14px 14px 0;
-  border-radius: 0 14px 14px 0;
-}
-.form-search .input-prepend .btn {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
+}
+.form-search .input-prepend .search-query {
+  -webkit-border-radius: 14px 0 0 14px;
+  -moz-border-radius: 14px 0 0 14px;
+  border-radius: 14px 0 0 14px;
+}
+.form-search .input-prepend .btn {
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  border-radius: 0 14px 14px 0;
 }
 .form-search input,
 .form-inline input,
@@ -5253,6 +5253,16 @@ body {
 #app-header .nav-pills li.active a:hover {
   background: none;
   color: inherit;
+}
+#app-header .form-search {
+  position: relative;
+}
+#app-header .form-search button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  left: -12px;
+  top: 5px;
 }
 h1 {
   font-size: 42px;
