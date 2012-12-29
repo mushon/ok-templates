@@ -5141,6 +5141,9 @@ body {
 .fill {
   height: 100%;
 }
+.text-center {
+  text-align: center;
+}
 /* Add additional stylesheets below
 -------------------------------------------------- */
 #app-header {
@@ -5268,22 +5271,23 @@ body {
 .card-main {
   margin-bottom: 100px;
 }
-.card-main .links {
-  position: absolute;
-  bottom: 10px;
+.card-main footer {
+  position: relative;
+  top: -30px;
+  margin-bottom: -22px;
 }
-.card-main .links ul {
+.card-main footer ul {
   margin: 0;
   padding: 0;
 }
-.card-main .links ul li {
+.card-main footer ul li {
   list-style: none;
   display: inline-block;
 }
-.card-main .links ul li + li {
+.card-main footer ul li + li {
   padding-right: 15px;
 }
-.card-main .links ul li + li::before {
+.card-main footer ul li + li::before {
   content: '';
   display: inline-block;
   width: 6px;
