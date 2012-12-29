@@ -5286,33 +5286,49 @@ h4 {
 .card-main {
   margin-bottom: 100px;
 }
-.card-main footer {
+.card-main [class*='span'] {
+  min-height: 235px;
   position: relative;
-  top: -30px;
-  margin-bottom: -22px;
 }
-.card-main footer ul {
+.card-main [class*='span'] + [class*='span']::before {
+  content: '';
+  display: block;
+  width: 1px;
+  background: #e6e6e6;
+  position: absolute;
+  top: 0;
+  bottom: -15px;
+  right: -15px;
+}
+.card-main ul {
   margin: 0;
   padding: 0;
-}
-.card-main footer ul li {
   list-style: none;
+}
+.card-main ul li {
   display: inline-block;
 }
-.card-main footer ul li + li {
+.card-main .mp-details .links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card-main .mp-details .links li + li {
   padding-right: 15px;
 }
-.card-main footer ul li + li::before {
+.card-main .mp-details .links li + li::before {
   content: '';
-  display: inline-block;
   width: 6px;
   height: 6px;
+  display: inline-block;
+  background: #464545;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: #464545;
   position: relative;
   right: -10px;
+  top: -1px;
 }
 .card-main .btn-big {
   display: block;
