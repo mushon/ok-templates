@@ -33,3 +33,5 @@ $ lessc less/app.less css/app.css
 ```
 
 If you're running Mac OS X, you can use [Less.app](http://incident57.com/less/) to automatically watch your LESS files for changes and compile them.
+
+If you're using WebStorm, you can use the [LESS Compiler](http://plugins.intellij.net/plugin?pr=idea&pluginId=7059) plugin to automatically compile LESS files.
