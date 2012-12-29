@@ -5222,6 +5222,7 @@ h4 {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  position: relative;
 }
 .card-list {
   margin-bottom: 55px;
@@ -5274,28 +5275,42 @@ h4 {
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
   display: block;
-  margin: 0 auto -20px;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  margin-left: -95px;
 }
 .card-main {
   margin-bottom: 100px;
 }
 .card-main .links {
-  margin-top: 100px;
+  position: absolute;
+  bottom: 10px;
 }
 .card-main .links ul {
-  overflow: auto;
   margin: 0;
   padding: 0;
 }
 .card-main .links ul li {
-  float: right;
-  margin-left: 30px;
-}
-.card-main .links ul li:first-child {
   list-style: none;
-  margin-right: -15px;
+  display: inline-block;
 }
-.btn-big {
+.card-main .links ul li + li {
+  padding-right: 15px;
+}
+.card-main .links ul li + li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #464545;
+  position: relative;
+  right: -10px;
+}
+.card-main .btn-big {
   display: block;
   width: 100%;
   padding-right: 0;
