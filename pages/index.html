@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>OKnesset</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <!-- Le styles -->
     <link rel="stylesheet" type="text/css" href="../css/app.css" />
@@ -15,177 +15,173 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="ico/favicon.png">
-
+    <link rel="shortcut icon" href="ico/favicon.png" />
   </head>
-
   <body>
-
-  <header>
-      <div class="container">
-          <div class="row">
-            <div id="logo" class="span4">
-              <a href="#">
-                <img src="../img/oknesset-logo.png" alt="oknesset-logo">
-                <span>כנסת פתוחה</span>
-              </a>
-            </div>
-            <div id="search" class="span5">
-              <form class="form-search">
-                <input type="text" class="input-medium search-query">
-                <button type="submit" class="btn">Search</button>
-              </form>
-            </div>
-                       
-            <div id="login" class="span3 dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                <b class="caret"></b>
-                <img src="../img/user-pic.png" alt="user-pic" width="36" height="36">
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li><a href="#">הגדרות</a></li>
-                <li><a href="#">יציאה</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <ul class="nav nav-pills">
-            <li class="active">
-              <a href="#">חכים וסיעות</a>
-            </li>
-            <li><a href="#">חקיקה</a></li>
-            <li><a href="#">ועדות</a></li>
-            <li><a href="#">מליאה</a></li>
-            <li><a href="#">אג'נדות</a></li>
-          </ul>
-      </div>
-  </header>
-
-  <div class="container">
-
-    <ul class="breadcrumb">
-      <li><a class="home-icon" href="#">דף בית</a> <span class="divider">/</span></li>
-      <li><a href="#">ח"כים וסיעות</a> <span class="divider">/</span></li>
-      <li><a href="#">הבית היהודי</a> <span class="divider">/</span></li>
-      <li class="active">זבולון אורלב</li>
-    </ul>
-
-    <div class="card card-main">
+    <header id="app-header" class="container">
       <div class="row">
-
-        <div class="span2">
-          <div class="spacer">
-            <img src="img/zvulon.jpg">
-          </div>
+        <div id="logo" class="span4">
+          <a href="/">
+            <img src="../img/oknesset-logo.png" alt="oknesset-logo" />
+            <span>כנסת פתוחה</span>
+          </a>
+        </div>
+        <div id="search" class="span5">
+          <form class="form-search">
+            <input type="text" class="input-medium search-query" />
+            <button type="submit" class="btn">Search</button>
+          </form>
         </div>
 
-        <div class="span7">
-          <div class="spacer fill">
-            <h1>זבולון אורלב</h1>
-            <p>הבית היהודי - המפד"ל החדשה <strong>(בקואליציה)</strong></p>
-            <p>יו"ר בוועדת החינוך, התרבות והספורט | יו"ר הועדה לשלום הילד</p>
-            <div class="links">
-              <ul>
-                <li><a>צור קשר</a></li>
-                <li><a>תפקידים נוספים</a></li>
-                <li><a>פרטים אישיים</a></li>
-              </ul>
-            </div>
-          </div>
+        <div id="login" class="span3 dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <b class="caret"></b>
+            <img src="../img/user-pic.png" alt="user-pic" width="36" height="36" />
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="#">הגדרות</a></li>
+            <li><a href="#">יציאה</a></li>
+          </ul>
         </div>
-
-        <div class="span3">
-          <div class="spacer actions-panel">
-            <a class="btn btn-big">עקוב</a>
-            <p>1,123 עוקבים</p>
-            <div class="links">
-              <ul>
-                <li><a>W</a></li>
-                <li><a>T</a></li>
-                <li><a>Wiki</a></li>
-                <li><a>F</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-    </div>
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#">חכים וסיעות</a>
+        </li>
+        <li><a href="#">חקיקה</a></li>
+        <li><a href="#">ועדות</a></li>
+        <li><a href="#">מליאה</a></li>
+        <li><a href="#">אג'נדות</a></li>
+      </ul>
+    </header>
 
+    <div class="container">
 
-	 
-	 <div class="row">
-	 	<div class="cards span9">
-	 	
-	 		<section class="card card-list card-list-latest">
-	 			<h2>פעילות אחרונה</h2>
-	 			<a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
-	 			<ul>
-		 			<li>
-		 				<p class="item-action">הגיש הצעת חוק</p>
-		 				<p class="item-title"><a href="#">חוק גנים לאומיים תיקון - היתר לניהול אתר הנצחה ממלכתי גבעת התחמושת</a></p>
-		 				<p class="item-context">אתמול ב<a href="#">ועדת החינוך התרבות והספורט</a></p>
-		 			</li>
-		 			<li>
-		 				<p class="item-action">הגיש הצעת חוק</p>
-		 				<p class="item-title"><a href="#">חוק הגנה על הורים בעת שמירה על שלום ילדיהם הקטינים תיקוני חקיקה</a></p>
-		 				<p class="item-context">יום רביעי, ה-25 ביולי, ב<a href="#">מליאה</a></p>
-		 			</li>
-	 			</ul>
-	 			<button class="btn btn-mini btn-more" type="button">עוד +</button>
-	 		</section>
-	 	
-	 	
-	 		<section class="card card-list card-list-latest">
-	 			<h2>חקיקה</h2>
-	 			<a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
-	 			<ul>
-		 			<li>
-		 				<p class="item-action">הגיש הצעת חוק</p>
-		 				<p class="item-title"><a href="#">חוק גנים לאומיים תיקון - היתר לניהול אתר הנצחה ממלכתי גבעת התחמושת</a></p>
-		 				<p class="item-context">אתמול ב<a href="#">ועדת החינוך התרבות והספורט</a></p>
-		 			</li>
-		 			<li>
-		 				<p class="item-action">הגיש הצעת חוק</p>
-		 				<p class="item-title"><a href="#">חוק הגנה על הורים בעת שמירה על שלום ילדיהם הקטינים תיקוני חקיקה</a></p>
-		 				<p class="item-context">יום רביעי, ה-25 ביולי, ב<a href="#">מליאה</a></p>
-		 			</li>
-	 			</ul>
-	 			<button class="btn btn-mini btn-more" type="button">עוד +</button>
-	 		</section>
-	 	
-	 	
-	 		<section class="card card-list card-list-latest">
-	 			<h2>ועדות</h2>
-	 			<a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
-	 			<ul>
-		 			<li>
-		 				<p class="item-action">הגיש הצעת חוק</p>
-		 				<p class="item-title"><a href="#">חוק גנים לאומיים תיקון - היתר לניהול אתר הנצחה ממלכתי גבעת התחמושת</a></p>
-		 				<p class="item-context">אתמול ב<a href="#">ועדת החינוך התרבות והספורט</a></p>
-		 			</li>
-		 			<li>
-		 				<p class="item-action">הגיש הצעת חוק</p>
-		 				<p class="item-title"><a href="#">חוק הגנה על הורים בעת שמירה על שלום ילדיהם הקטינים תיקוני חקיקה</a></p>
-		 				<p class="item-context">יום רביעי, ה-25 ביולי, ב<a href="#">מליאה</a></p>
-		 			</li>
-	 			</ul>
-	 			<button class="btn btn-mini btn-more" type="button">עוד +</button>
-	 		</section>
-	 	
-	 	</div>
-	 	<aside class="span3">
-	 		
-	 	</aside>
-	 </div>
-	 
-      <hr>
+      <ul class="breadcrumb">
+        <li><a class="home-icon" href="#">דף בית</a> <span class="divider">/</span></li>
+        <li><a href="#">ח"כים וסיעות</a> <span class="divider">/</span></li>
+        <li><a href="#">הבית היהודי</a> <span class="divider">/</span></li>
+        <li class="active">זבולון אורלב</li>
+      </ul>
 
+      <section class="card card-main">
+        <div class="row">
+          <div class="span2">
+            <div class="spacer">
+              <img src="../assets/zvulon.jpg" />
+            </div>
+          </div>
+
+          <div class="span7">
+            <div class="spacer fill">
+              <header>
+                <h1>זבולון אורלב</h1>
+              </header>
+              <p>הבית היהודי - המפד"ל החדשה <strong>(בקואליציה)</strong></p>
+              <p>יו"ר בוועדת החינוך, התרבות והספורט | יו"ר הועדה לשלום הילד</p>
+              <footer class="links">
+                <ul>
+                  <li><a>צור קשר</a></li>
+                  <li><a>תפקידים נוספים</a></li>
+                  <li><a>פרטים אישיים</a></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+
+          <div class="span3">
+            <div class="spacer actions-panel">
+              <a class="btn btn-big">עקוב</a>
+              <p>1,123 עוקבים</p>
+              <div class="links">
+                <ul>
+                  <li><a>W</a></li>
+                  <li><a>T</a></li>
+                  <li><a>Wiki</a></li>
+                  <li><a>F</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="row">
+	 	    <div class="cards span9">
+	 		    <section class="card card-list card-list-latest">
+	 			    <header>
+               <h2>פעילות אחרונה</h2>
+               <a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+	 			    </header>
+	 			    <ul>
+              <li>
+                <p class="item-action">הגיש הצעת חוק</p>
+                <p class="item-title"><a href="#">חוק גנים לאומיים תיקון - היתר לניהול אתר הנצחה ממלכתי גבעת התחמושת</a></p>
+                <p class="item-context">אתמול ב<a href="#">ועדת החינוך התרבות והספורט</a></p>
+              </li>
+              <li>
+                <p class="item-action">הגיש הצעת חוק</p>
+                <p class="item-title"><a href="#">חוק הגנה על הורים בעת שמירה על שלום ילדיהם הקטינים תיקוני חקיקה</a></p>
+                <p class="item-context">יום רביעי, ה-25 ביולי, ב<a href="#">מליאה</a></p>
+              </li>
+	 			    </ul>
+	 			    <footer>
+               <a class="btn btn-mini btn-more">עוד +</a>
+	 			    </footer>
+	 		    </section>
+
+	 		    <section class="card card-list card-list-latest">
+	 			    <header>
+               <h2>חקיקה</h2>
+               <a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+	 			    </header>
+            <ul>
+              <li>
+                <p class="item-action">הגיש הצעת חוק</p>
+                <p class="item-title"><a href="#">חוק גנים לאומיים תיקון - היתר לניהול אתר הנצחה ממלכתי גבעת התחמושת</a></p>
+                <p class="item-context">אתמול ב<a href="#">ועדת החינוך התרבות והספורט</a></p>
+              </li>
+              <li>
+                <p class="item-action">הגיש הצעת חוק</p>
+                <p class="item-title"><a href="#">חוק הגנה על הורים בעת שמירה על שלום ילדיהם הקטינים תיקוני חקיקה</a></p>
+                <p class="item-context">יום רביעי, ה-25 ביולי, ב<a href="#">מליאה</a></p>
+              </li>
+            </ul>
+            <footer>
+              <a class="btn btn-mini btn-more">עוד +</a>
+            </footer>
+	 		    </section>
+
+          <section class="card card-list card-list-latest">
+            <header>
+              <h2>ועדות</h2>
+              <a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+            </header>
+            <ul>
+              <li>
+                <p class="item-action">הגיש הצעת חוק</p>
+                <p class="item-title"><a href="#">חוק גנים לאומיים תיקון - היתר לניהול אתר הנצחה ממלכתי גבעת התחמושת</a></p>
+                <p class="item-context">אתמול ב<a href="#">ועדת החינוך התרבות והספורט</a></p>
+              </li>
+              <li>
+                <p class="item-action">הגיש הצעת חוק</p>
+                <p class="item-title"><a href="#">חוק הגנה על הורים בעת שמירה על שלום ילדיהם הקטינים תיקוני חקיקה</a></p>
+                <p class="item-context">יום רביעי, ה-25 ביולי, ב<a href="#">מליאה</a></p>
+              </li>
+            </ul>
+            <footer>
+              <a class="btn btn-mini btn-more">עוד +</a>
+            </footer>
+          </section>
+	 	    </div>
+        <aside class="span3">
+
+        </aside>
+	    </div>
+      <hr />
       <footer>
         <p>&copy; Company 2012</p>
       </footer>
-
     </div> <!-- /container -->
 
     <!-- Le javascript
@@ -204,6 +200,5 @@
     <script src="../lib/bootstrap-collapse.js"></script>
     <script src="../lib/bootstrap-carousel.js"></script>
     <script src="../lib/bootstrap-typeahead.js"></script>
-
   </body>
 </html>

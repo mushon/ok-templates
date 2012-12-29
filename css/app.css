@@ -5143,35 +5143,35 @@ body {
 }
 /* Add additional stylesheets below
 -------------------------------------------------- */
-header {
+#app-header {
   padding: 12px 0 0;
   border-bottom: 2px solid #222222;
 }
-header #logo img {
+#app-header #logo img {
   float: right;
   margin-left: 10px;
 }
-header #logo span {
+#app-header #logo span {
   padding: 29px 0 0;
   display: block;
 }
-header #login > a {
+#app-header #login > a {
   float: left;
   display: block;
 }
-header #login .dropdown-menu {
+#app-header #login .dropdown-menu {
   left: 0;
   right: auto;
 }
-header .nav-pills {
+#app-header .nav-pills {
   margin-bottom: 0;
 }
-header .nav-pills li {
+#app-header .nav-pills li {
   width: 20%;
   margin-left: -1px;
   border-left: 1px solid #f1f1f1;
 }
-header .nav-pills li a {
+#app-header .nav-pills li a {
   padding-bottom: 12px;
   text-align: center;
   margin: 0 30px;
@@ -5181,18 +5181,18 @@ header .nav-pills li a {
   color: #222222;
   font-size: 20px;
 }
-header .nav-pills li a:hover {
+#app-header .nav-pills li a:hover {
   padding-bottom: 8px;
   border-bottom: 4px solid #222222;
 }
-header .nav-pills li.active a {
+#app-header .nav-pills li.active a {
   background: none;
   padding-bottom: 8px;
   border-bottom: 4px solid #222222;
   color: #222222;
   font-weight: 700;
 }
-header .nav-pills li.active a:hover {
+#app-header .nav-pills li.active a:hover {
   background: none;
   color: inherit;
 }
@@ -5206,6 +5206,7 @@ header .nav-pills li.active a:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  position: relative;
 }
 .card-list {
   margin-bottom: 55px;
@@ -5259,28 +5260,42 @@ header .nav-pills li.active a:hover {
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
   display: block;
-  margin: 0 auto -20px;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  margin-left: -95px;
 }
 .card-main {
   margin-bottom: 100px;
 }
 .card-main .links {
-  margin-top: 100px;
+  position: absolute;
+  bottom: 10px;
 }
 .card-main .links ul {
-  overflow: auto;
   margin: 0;
   padding: 0;
 }
 .card-main .links ul li {
-  float: right;
-  margin-left: 30px;
-}
-.card-main .links ul li:first-child {
   list-style: none;
-  margin-right: -15px;
+  display: inline-block;
 }
-.btn-big {
+.card-main .links ul li + li {
+  padding-right: 15px;
+}
+.card-main .links ul li + li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #464545;
+  position: relative;
+  right: -10px;
+}
+.card-main .btn-big {
   display: block;
   width: 100%;
   padding-right: 0;
