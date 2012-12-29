@@ -5417,6 +5417,39 @@ h4 {
   font-weight: normal;
   color: #605e5e;
 }
+.note-worthy-note {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 140px 0 30px;
+}
+.note-worthy-note header {
+  *zoom: 1;
+}
+.note-worthy-note header:before,
+.note-worthy-note header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-worthy-note header:after {
+  clear: both;
+}
+.note-worthy-note header h3 {
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: normal;
+  line-height: 1.45em;
+  margin: -5px 0 0;
+}
+.note-worthy-note header h3 span {
+  display: block;
+  font-weight: 700;
+}
+.note-worthy-good {
+  background: url(../img/badge-good.png) 50% 10px no-repeat;
+}
+.note-worthy-good header h3 span {
+  color: #3ac8a8;
+}
 .btn-question {
   float: left;
   *zoom: 1;
