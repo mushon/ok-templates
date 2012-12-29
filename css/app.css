@@ -5192,6 +5192,9 @@ body {
   padding: 12px 0 0;
   border-bottom: 2px solid #222222;
 }
+#app-header #logo {
+  margin-top: -18px;
+}
 #app-header #logo img {
   float: right;
   margin-left: 10px;
@@ -5199,6 +5202,9 @@ body {
 #app-header #logo span {
   padding: 29px 0 0;
   display: block;
+  font-size: 20px;
+  color: #464545;
+  font-weight: 700;
 }
 #app-header #login > a {
   float: left;
@@ -5257,15 +5263,26 @@ body {
 #app-header .form-search {
   position: relative;
 }
+#app-header .form-search input.search-query {
+  height: 30px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+}
 #app-header .form-search button {
   background: transparent;
   border: none;
   position: absolute;
-  left: -12px;
-  top: 5px;
+  left: -9px;
+  top: 11px;
+  opacity: 0.5;
+}
+#app-header .form-search button:hover {
+  opacity: 1;
 }
 .breadcrumb {
   background: none;
+  margin: 10px 0;
 }
 h1 {
   font-size: 42px;
