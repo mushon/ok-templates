@@ -5143,35 +5143,35 @@ body {
 }
 /* Add additional stylesheets below
 -------------------------------------------------- */
-header {
+#app-header {
   padding: 12px 0 0;
   border-bottom: 2px solid #222222;
 }
-header #logo img {
+#app-header #logo img {
   float: right;
   margin-left: 10px;
 }
-header #logo span {
+#app-header #logo span {
   padding: 29px 0 0;
   display: block;
 }
-header #login > a {
+#app-header #login > a {
   float: left;
   display: block;
 }
-header #login .dropdown-menu {
+#app-header #login .dropdown-menu {
   left: 0;
   right: auto;
 }
-header .nav-pills {
+#app-header .nav-pills {
   margin-bottom: 0;
 }
-header .nav-pills li {
+#app-header .nav-pills li {
   width: 20%;
   margin-left: -1px;
   border-left: 1px solid #f1f1f1;
 }
-header .nav-pills li a {
+#app-header .nav-pills li a {
   padding-bottom: 12px;
   text-align: center;
   margin: 0 30px;
@@ -5181,20 +5181,36 @@ header .nav-pills li a {
   color: #222222;
   font-size: 20px;
 }
-header .nav-pills li a:hover {
+#app-header .nav-pills li a:hover {
   padding-bottom: 8px;
   border-bottom: 4px solid #222222;
 }
-header .nav-pills li.active a {
+#app-header .nav-pills li.active a {
   background: none;
   padding-bottom: 8px;
   border-bottom: 4px solid #222222;
   color: #222222;
   font-weight: 700;
 }
-header .nav-pills li.active a:hover {
+#app-header .nav-pills li.active a:hover {
   background: none;
   color: inherit;
+}
+h1 {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 .card {
   background: #ffffff;
@@ -5223,8 +5239,7 @@ header .nav-pills li.active a:hover {
   border-radius: 0 4px 0 0;
 }
 .card-list .btn-question {
-  float: left;
-  margin: 10px;
+  margin: 12px;
 }
 .card-list ul {
   clear: both;
@@ -5294,4 +5309,65 @@ header .nav-pills li.active a:hover {
   background: #92b2cc;
   color: #ffffff;
   border: 2px solid #4f81a9;
+}
+.sidebar {
+  background: #ffffff;
+  border-top: 2px solid #222222;
+  padding: 10px;
+}
+.sidebar h2 {
+  margin: 0;
+  line-height: 1em;
+  float: right;
+  *zoom: 1;
+}
+.sidebar h2:before,
+.sidebar h2:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.sidebar h2:after {
+  clear: both;
+}
+.sidebar ul {
+  clear: both;
+  margin-top: 60px;
+  list-style: none;
+}
+.sidebar ul li {
+  margin: 20px 0;
+}
+.agenda-mini header {
+  *zoom: 1;
+}
+.agenda-mini header:before,
+.agenda-mini header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.agenda-mini header:after {
+  clear: both;
+}
+.agenda-mini header img {
+  float: right;
+  display: block;
+  margin: 0 0 10px 20px;
+}
+.agenda-mini header h3 {
+  float: right;
+}
+.btn-question {
+  float: left;
+  *zoom: 1;
+}
+.btn-question:before,
+.btn-question:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.btn-question:after {
+  clear: both;
 }
