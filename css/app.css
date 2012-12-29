@@ -5326,9 +5326,10 @@ h4 {
   border: 2px solid #4f81a9;
 }
 .sidebar {
-  background: #ffffff;
+  background: #fcfcfc;
   border-top: 2px solid #222222;
   padding: 10px;
+  margin-bottom: 30px;
 }
 .sidebar h2 {
   margin: 0;
@@ -5353,6 +5354,9 @@ h4 {
 .sidebar ul li {
   margin: 20px 0;
 }
+.agenda-mini {
+  border-bottom: 1px solid #e6e6e6;
+}
 .agenda-mini header {
   *zoom: 1;
 }
@@ -5368,13 +5372,19 @@ h4 {
 .agenda-mini header img {
   float: right;
   display: block;
-  margin: 0 0 10px 20px;
+  margin: 0 0 10px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 .agenda-mini header h3 {
   float: right;
   letter-spacing: 0;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1.45em;
   margin: -5px 0 0;
 }
 .agenda-mini header h3 span {
@@ -5388,7 +5398,57 @@ h4 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 35px auto;
+}
+.agenda-pie .agenda-percent {
+  color: #464545;
+  display: block;
+  margin: 32px auto;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-size: 12px;
+}
+.agenda-pie .agenda-percent .agenda-percent-num {
+  display: block;
+  font-size: 20px;
+}
+.agenda-pie .agenda-percent .agenda-percent-num span {
+  font-weight: normal;
+  color: #605e5e;
+}
+.note-worthy-note {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 140px 0 30px;
+}
+.note-worthy-note header {
+  *zoom: 1;
+}
+.note-worthy-note header:before,
+.note-worthy-note header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.note-worthy-note header:after {
+  clear: both;
+}
+.note-worthy-note header h3 {
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: normal;
+  line-height: 1.45em;
+  margin: -5px 0 0;
+}
+.note-worthy-note header h3 span {
+  display: block;
+  font-weight: 700;
+}
+.note-worthy-good {
+  background: url(../img/badge-good.png) 50% 10px no-repeat;
+}
+.note-worthy-good header h3 span {
+  color: #3ac8a8;
 }
 .btn-question {
   float: left;
