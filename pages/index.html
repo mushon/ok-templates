@@ -17,7 +17,7 @@
     <![endif]-->
     <link rel="shortcut icon" href="ico/favicon.png" />
   </head>
-  <body>
+  <body class="mk-page">
     <header id="app-header" class="container">
       <div class="row">
         <div id="logo" class="span4">
@@ -26,17 +26,23 @@
             <span>כנסת פתוחה</span>
           </a>
         </div>
-        <div id="search" class="span5">
+        <div class="span5">
           <form class="form-search">
-            <input type="text" class="input-medium search-query" />
-            <button type="submit" class="btn">Search</button>
+            <div>
+              <input type="text" class="span5 search-query" placeholder="חיפוש" />
+              <button type="submit">
+                <i class="icon icon-search"></i>
+              </button>
+            </div>
           </form>
         </div>
 
         <div id="login" class="span3 dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             <b class="caret"></b>
-            <img src="../img/user-pic.png" alt="user-pic" width="36" height="36" />
+            <span class="user-pic">
+              <img src="../img/user-pic.png" alt="user-pic" width="36" height="36" />
+            </span>
           </a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <li><a href="#">הגדרות</a></li>
@@ -73,45 +79,41 @@
             </div>
           </div>
 
-          <div class="span7">
+          <div class="span7 card-details">
             <div class="spacer fill">
               <header>
                 <h1>זבולון אורלב</h1>
               </header>
               <p>הבית היהודי - המפד"ל החדשה <strong>(בקואליציה)</strong></p>
-              <p>יו"ר בוועדת החינוך, התרבות והספורט | יו"ר הועדה לשלום הילד</p>
-              <footer class="links">
-                <ul>
-                  <li><a>צור קשר</a></li>
-                  <li><a>תפקידים נוספים</a></li>
-                  <li><a>פרטים אישיים</a></li>
-                </ul>
-              </footer>
-            </div>
-          </div>
-
-          <div class="span3">
-            <div class="spacer actions-panel">
-              <a class="btn btn-big">עקוב</a>
-              <p>1,123 עוקבים</p>
-              <div class="links">
-                <ul>
-                  <li><a>W</a></li>
-                  <li><a>T</a></li>
-                  <li><a>Wiki</a></li>
-                  <li><a>F</a></li>
+              <p>יו"ר בוועדת החינוך, התרבות והספורט | יו"ר הועדה לשלום הילד | <a href="#">עוד +</a></p>
+              <div class="social-links">
+                <h5>זבולון ברשת:</h5>
+                <ul class="text-center">
+                  <li><a href="#" class="icon sprite-website" rel="tooltip" title="האתר של זבולון">אתר</a></li>
+                  <li><a href="#" class="icon sprite-wiki" rel="tooltip" title="זבולון בויקיפדיה">ויקיפדיה</a></li>
+                  <li><a href="#" class="icon sprite-facebook" rel="tooltip" title="זבולון בפייסבוק">פייסבוק</a></li>
+                  <li><a href="#" class="icon sprite-twitter" rel="tooltip" title="זבולון בטוויטר">טוויטר</a></li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <div class="span3 social-details">
+            <div class="spacer actions-panel">
+              <a class="btn btn-big btn-primary">עקוב</a>
+              <p class="text-center">1,123 עוקבים</p>
+              <a class="btn btn-big btn-contact">צרו קשר</a>
+            </div>
+          </div>
         </div>
+        <a class="btn btn-mini btn-expand">פרטים אישיים +</a>
       </section>
       <div class="row">
 	 	    <div class="cards span9">
 	 		    <section class="card card-list card-list-latest">
 	 			    <header>
                <h2>פעילות אחרונה</h2>
-               <a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+               <a class="btn btn-mini btn-question" href="#">?</a>
 	 			    </header>
 	 			    <ul>
               <li>
@@ -126,14 +128,14 @@
               </li>
 	 			    </ul>
 	 			    <footer>
-               <a class="btn btn-mini btn-more">עוד +</a>
+               <a class="btn btn-mini btn-expand">עוד +</a>
 	 			    </footer>
 	 		    </section>
 
 	 		    <section class="card card-list card-list-latest">
 	 			    <header>
                <h2>חקיקה</h2>
-               <a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+               <a class="btn btn-mini btn-question" href="#">?</a>
 	 			    </header>
             <ul>
               <li>
@@ -148,14 +150,14 @@
               </li>
             </ul>
             <footer>
-              <a class="btn btn-mini btn-more">עוד +</a>
+              <a class="btn btn-mini btn-expand">עוד +</a>
             </footer>
 	 		    </section>
 
           <section class="card card-list card-list-latest">
             <header>
               <h2>ועדות</h2>
-              <a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+               <a class="btn btn-mini btn-question" href="#">?</a>
             </header>
             <ul>
               <li>
@@ -170,16 +172,16 @@
               </li>
             </ul>
             <footer>
-              <a class="btn btn-mini btn-more">עוד +</a>
+              <a class="btn btn-mini btn-expand">עוד +</a>
             </footer>
           </section>
-	 	    </div>
+	 	    </div> <!-- /span9 -->
 
 	 	<div class="span3">	 		
 	 	
 	 		<aside class="sidebar sidebar-agendas">
 	 			<h2>אג'נדות בולטות</h2>
-	 			<a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+	 			<a class="btn btn-mini btn-question" href="#">?</a>
 	 			<ul>
 		 			<li class="agenda-mini">
 		 				<header>
@@ -227,7 +229,7 @@
 	 		
 	 		<aside class="sidebar note-worthy">
 	 			<h2>ראוי לציון</h2>
-	 			<a class="btn btn-mini btn-question" href="#"><i class="icon-question-sign"></i> ?</a>
+	 			<a class="btn btn-mini btn-question" href="#">?</a>
 	 			<ul>
 		 			<li class="note-worthy-note note-worthy-presence note-worthy-good">
 		 				<header>
@@ -248,7 +250,19 @@
         <p>&copy; Company 2012</p>
       </footer>
     </div> <!-- /container -->
-
+    
+          </aside>
+        </div>
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+    <div class="container">
+      <div class="row">
+        <hr />
+        <footer class="span12">
+          <p class="text-center">&copy; Company 2012</p>
+        </footer>
+      </div>
+    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

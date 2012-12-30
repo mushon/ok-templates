@@ -1,39 +1,59 @@
 .card-main {
   margin-bottom: 100px;
-	
-  .links {
-    position: absolute;
-    bottom:10px;
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-        display: inline-block;
-        &+li{
-          padding-right: 15px;
-          &::before{
-            content: '';
-            display: inline-block;
-            width:6px;
-            height:6px;
-            .border-radius(50%);
-            background-color: @textColor;
-            position: relative;
-            right:-10px;
-          }
-        }
-      }
+
+  [class*='span']{
+    min-height: 245px;
+    position: relative;
+
+    &+[class*='span']::before{
+      content: '';
+      display: block;
+      width:1px;
+      background: @borderColor;
+      position: absolute;
+      top:0;
+      bottom:-15px;
+      right:-15px;
     }
   }
 
-  .btn-big {
-    .btn-block;
-    margin: 10px;
-    padding: 6px;
-    width: 90%;
-    background: @buttonBackgroundColor;
-    color: @white;
-    border: 2px solid darken(@buttonBackgroundColor, 20%);
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+  }
+
+  .card-details {
+    .links {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      li + li{
+        padding-right: 15px;
+        &::before {
+          content: '';
+          width:6px;
+          height:6px;
+          display: inline-block;
+          background: @textColor;
+          .border-radius(50%);
+          position: relative;
+          right:-10px;
+          top:-1px;
+        }
+      }
+    }
+  }    
+    
+  .btn-contact{
+		position: absolute;
+		bottom: 0;
+		left: 27px;
+		width: 232px;
   }
 }
