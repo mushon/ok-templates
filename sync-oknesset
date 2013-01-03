@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Copies the resources to the open-knesset directory
+#
+# Optionally pass the location of the Open-Knesset repo as the first argument
+# Defaults to ../Open-Knesset
+
+OK_DIR="${1:-../Open-Knesset}"
+STATIC_DIR="$OK_DIR/static"
+
+CSS_OUT="$STATIC_DIR/css/app.css"
+
+CSS_IN=less/app.less
+
+echo "Compiling less"
+lessc "$CSS_IN" "$CSS_OUT"
+
+echo "Copying responsive.css"
+cp css/responsive.css $STATIC_DIR/css/
+
+echo "Copying fonts"
+tar cf - --exclude='Alef*.html' --exclude='.DS_Store' font | (cd $STATIC_DIR && tar xvf -)
+
+echo "Copying images"
+tar cf - --exclude='user-pic.png' --exclude='sprites/*' img | (cd $STATIC_DIR && tar xvf -)
+
+echo "Copying bootstrap js"
+cd lib
+tar cf - --exclude=README.md * | (cd .. && cd "$STATIC_DIR/js" && tar xvf -)
+cd ..
