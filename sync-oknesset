@@ -22,7 +22,7 @@ echo "Copying fonts"
 tar cf - --exclude='Alef*.html' --exclude='.DS_Store' font | (cd $STATIC_DIR && tar xvf -)
 
 echo "Copying images"
-tar cf - --exclude='user-pic.png' --exclude='sprites/*' img | (cd $STATIC_DIR && tar xvf -)
+tar cf - --exclude='user-pic.png' --exclude='sprites/*' --exclude "sprites.psd" img | (cd $STATIC_DIR && tar xvf -)
 
 echo "Copying bootstrap js"
 cd lib
