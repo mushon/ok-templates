@@ -24,7 +24,8 @@ tar cf - --exclude='Alef*.html' --exclude='.DS_Store' font | (cd $STATIC_DIR && 
 echo "Copying images"
 tar cf - --exclude='user-pic.png' --exclude='sprites/*' --exclude "sprites.psd" img | (cd $STATIC_DIR && tar xvf -)
 
-echo "Copying bootstrap js"
+echo "Copying js"
 cd lib
 tar cf - --exclude=README.md * | (cd .. && cd "$STATIC_DIR/js" && tar xvf -)
 cd ..
+#cp charts/mk-pie.js "$STATIC_DIR/js"
