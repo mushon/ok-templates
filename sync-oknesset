@@ -28,4 +28,4 @@ echo "Copying js"
 cd lib
 tar cf - --exclude=README.md * | (cd .. && cd "$STATIC_DIR/js" && tar xvf -)
 cd ..
-cp charts/mk-pie.js "$STATIC_DIR/js"
+#cp charts/mk-pie.js "$STATIC_DIR/js"
