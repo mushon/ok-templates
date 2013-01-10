@@ -5643,6 +5643,18 @@ ol {
 .sidebar h2:after {
   clear: both;
 }
+.sidebar header {
+  *zoom: 1;
+}
+.sidebar header:before,
+.sidebar header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.sidebar header:after {
+  clear: both;
+}
 .sidebar ul {
   clear: both;
   list-style: none;
@@ -5932,4 +5944,34 @@ ol {
 }
 .social-links ul li a:hover {
   opacity: 1;
+}
+.label.level6 {
+  background-color: #b94a48;
+}
+.label.level6[href] {
+  background-color: #953b39;
+}
+.label.level5 {
+  background-color: #f89406;
+}
+.label.level5[href] {
+  background-color: #c67605;
+}
+.label.level4 {
+  background-color: #468847;
+}
+.label.level4[href] {
+  background-color: #356635;
+}
+.label.level3 {
+  background-color: #3a87ad;
+}
+.label.level3[href] {
+  background-color: #2d6987;
+}
+.label.level2 {
+  background-color: #333333;
+}
+.label.level2[href] {
+  background-color: #1a1a1a;
 }
