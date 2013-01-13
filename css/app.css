@@ -5573,6 +5573,10 @@ ol {
   font-size: 12px;
   text-align: center;
 }
+.card-party-members > div .party-member-photo .party-member-extra p,
+.card-party-members > div .party-member-photo .party-member-extra div {
+  margin: 0;
+}
 .card-party-members > div .party-member-photo .party-member-info {
   background: #ffffff;
   border: 1px solid #e6e6e6;
@@ -5799,6 +5803,18 @@ ol {
 .agenda-pie .agenda-percent .agenda-percent-num span {
   font-weight: normal;
   color: #605e5e;
+}
+.agenda-item img {
+  float: right;
+  display: block;
+  margin: 0 0 10px 10px;
+}
+.agenda-item h2 span {
+  font-weight: normal;
+}
+.agenda-item .visualization {
+  height: 150px;
+  font-size: 12px;
 }
 .note-worthy-note {
   border-bottom: 1px solid #e6e6e6;
