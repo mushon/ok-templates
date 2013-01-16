@@ -5634,6 +5634,7 @@ ol {
 }
 .card-party-members .party-member-photo .party-member-info .party-member-info-links ul {
   margin-top: 8px;
+  padding: 0;
 }
 .card-party-members .party-member-photo:hover .party-member-info {
   display: block;
