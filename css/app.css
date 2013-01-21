@@ -5653,7 +5653,8 @@ ol {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.card-party-members.numbered .party-member-photo:after {
+.card-party-members.numbered .party-member-photo:after,
+.card-party-members .party-member-name {
   content: counter(memberNum);
   position: absolute;
   bottom: 2px;
