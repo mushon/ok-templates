@@ -5467,6 +5467,9 @@ ol {
 .card-list ul li:last-child {
   border-bottom: none;
 }
+.card-list ul li .progress {
+  margin-bottom: 0;
+}
 .card-list.compact ul li {
   padding: 20px 0 15px 0;
 }
